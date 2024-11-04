@@ -1,6 +1,6 @@
 #!/bin/bash -i
-# Author: drak3hft7
-# Date: 08/09/2021
+# Author: inactive(drak3hft7)
+# Date: 05/11/2024
 
 # Check if the script is executed with root privileges
 if [ "${UID}" -eq 0 ]
@@ -33,7 +33,8 @@ sleep 1.5
 
 #---------Install Golang
 echo -e "\e[93m\e[1m----> Golang environment installation in progress ...";
-cd /tmp && wget https://go.dev/dl/go1.21.6.linux-amd64.tar.gz > /dev/null 2>&1 && tar xvf go1.21.6.linux-amd64.tar.gz > /dev/null 2>&1;
+rm -rf /usr/local/go
+cd /tmp && wget https://go.dev/dl/go1.23.2.linux-amd64.tar.gz > /dev/null 2>&1 && tar xvf go1.23.2.linux-amd64.tar.gz > /dev/null 2>&1;
 mv go /usr/local
 export GOROOT=/usr/local/go && export GOPATH=$HOME/go && export PATH=$GOPATH/bin:$GOROOT/bin:$PATH;
 echo 'export GOROOT=/usr/local/go' >> ~/.bash_profile && echo 'export GOPATH=$HOME/go'	>> ~/.bash_profile	&& echo 'export PATH=$GOPATH/bin:$GOROOT/bin:$PATH' >> ~/.bash_profile;

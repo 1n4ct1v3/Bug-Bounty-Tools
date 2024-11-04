@@ -6,6 +6,7 @@ Script that automates the installation of the main tools used for web applicatio
 ```bash
 cd /tmp && git clone https://github.com/1n4ct1v3/Bug-Bounty-Tools
 cd Bug-Bounty-Tools
+chmod +x bb-tools-installer.sh
 sudo ./bb-tools-installer.sh
 ```
 ## Example during installation:

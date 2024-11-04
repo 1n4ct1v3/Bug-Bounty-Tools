@@ -1,12 +1,12 @@
-# VPS-Bug-Bounty-Tools
+# Bug-Bounty-Tools
 
-Script that automates the installation of the main tools used for web application penetration testing and Bug Bounty.
+Script that automates the installation of the main tools used for web application penetration testing and Bug Bounty. Forked from https://github.com/drak3hft7/VPS-Bug-Bounty-Tools
 
 ## Usage:
 ```bash
-cd /tmp && git clone https://github.com/drak3hft7/VPS-Bug-Bounty-Tools
-cd VPS-Bug-Bounty-Tools
-sudo ./Tools-BugBounty-installer.sh
+cd /tmp && git clone https://github.com/1n4ct1v3/Bug-Bounty-Tools
+cd Bug-Bounty-Tools
+sudo ./bb-tools-installer.sh
 ```
 ## Example during installation:
 ![Main Logo](images/tool.PNG 'Example')
